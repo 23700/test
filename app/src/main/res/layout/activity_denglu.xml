@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".denglu" android:layout_centerVertical="false">
+    <EditText
+            android:layout_width="275dp"
+            android:layout_height="61dp"
+            android:inputType="numberSigned"
+            android:ems="10"
+            tools:layout_editor_absoluteX="86dp" android:id="@+id/number"
+            android:textColor="@android:color/background_dark" android:visibility="visible"
+            android:textAllCaps="false" android:selectAllOnFocus="true"
+            style="@android:style/Widget.Holo.EditText" android:autoText="false" android:hint="        手机号码|用户名|邮箱"
+            app:layout_constraintBottom_toTopOf="@+id/password"
+    />
+    <EditText
+            android:layout_width="280dp"
+            android:layout_height="49dp"
+            android:inputType="numberPassword"
+            android:ems="10"
+            tools:layout_editor_absoluteY="184dp" tools:layout_editor_absoluteX="81dp" android:id="@+id/password"
+            android:hint="请输入密码" android:textSize="18sp" android:phoneNumber="true"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="290dp"
+            android:layout_height="43dp" tools:layout_editor_absoluteY="280dp"
+            tools:layout_editor_absoluteX="81dp" android:id="@+id/textView" tools:text="登录"
+            android:textColor="@android:color/background_dark" android:textSize="20sp"
+            android:gravity="center_horizontal"/>
+    <Button
+            android:text="Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" tools:layout_editor_absoluteY="1dp"
+            tools:layout_editor_absoluteX="318dp" android:id="@+id/@mima" tools:text="找回密码" android:textSize="18sp"/>
+    <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="@string/str_find_password"
+            android:textColor="@color/color_find_password"
+            android:textSize="15sp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
